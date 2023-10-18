@@ -19,7 +19,7 @@ jobs:
          uses: actions/setup-node@v3
            
        - name: Set CLI Config
-         run: jf npm-config --global=true --repo-resolve=npm --repo-deploy=npm
+         run: jf yarn-config --global=true --repo-resolve=npm --repo-deploy=npm
            
        - name: Install Deps
          run: jf yarn install
