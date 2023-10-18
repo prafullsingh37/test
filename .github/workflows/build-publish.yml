@@ -22,13 +22,13 @@ jobs:
          run: jf npm-config --global=true --repo-resolve=npm --repo-deploy=npm
            
        - name: Install Deps
-         run: jf npm install
+         run: jf yarn install
            
        - name: Run tests
          run: npm test
          
        - name: Publish
-         run: jf npm publish
+         run: jf yarn publish
          
        - name: Publish Build info With JFrog CLI
          run: |
